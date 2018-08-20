@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+    This is a survey on the most popular environment tool for developers.
+    </p>
+    <form action="index.html" method="post" id="survey-form">
+    <fieldset>
+      <legend>
+      General information
+      </legend>
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" name="user_name" placeholder="Please, enter your name" required>
+
+      <label for="email" id="email-label">E-mail:</label>
+      <input type="email" required id="email" name="user_mail" placeholder="Please, your email" required>
+
+      <label for="number" id="number-label">Age:</label>
+      <input type="number" id="number" name="user_number" min="1" max="125" placeholder="Enter your age" required>
+
+      <label for="" id="">Please, select your gender identity:</label>
+      <input type="radio" name="gender" value="male"> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br>
+      <input type="radio" name="gender" value="other"> Other
+    </fieldset>
+
+    <fieldset>
+      <legend>
+      Profession information
+      </legend>
+      <label for="number" id="number-label">Please, select your developer role:</label>
+      <select id="dropdown">
+        <option value="front_end">Front-end Web developer</option>
+        <option value="back_end">Back-end Web developer</option>
+        <option value="full_stack">Full stack Web developer</option>
+        <option value="mobile_developer">Mobile developer</option>
+        <option value="analyst">Analyst</option>
+        <option value="tester">Tester</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="number" id="number-label">Please, select environment tool you use:</label>
+      <input type="checkbox" value="visual_studio"> Visual Studio<br>
+      <input type="checkbox" value="notepad"> Notepad++<br>
+      <input type="checkbox" value="sublime_text"> Sublime Text<br>
+      <input type="checkbox" value="proton_mail"> Vim<br>
+      <input type="checkbox" value="icloud_mail"> Visual Studio Code<br>
+      <input type="checkbox" value="icloud_mail"> Atom<br>
+      <input type="checkbox" value="icloud_mail"> Eclipse<br>
+      <input type="checkbox" value="icloud_mail"> Other<br>
+
+      <label for="comments" id="comments-label" >If there is anything you would like to add, please use the textbox below:</label>
+      <textarea id="comments" name="user_comments" placeholder="Please, enter your comments here..."></textarea>
+    </fieldset>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
